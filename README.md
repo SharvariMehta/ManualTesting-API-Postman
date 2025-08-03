@@ -1,6 +1,6 @@
 # 📩 API Manual Testing with Postman
 
-A comprehensive repository for **Manual API Testing** using **Postman**, demonstrating structured API test cases, real-world scenarios, and industry-standard best practices to validate RESTful services.
+A comprehensive repository for **Manual API Testing** using **Postman**,  — featuring real-world REST APIs, request collections, response validations, and status code verifications. Covers data verification and API documentation for efficient and structured manual testing workflows. Efficiently demonstrates structured API test cases, real-world scenarios, and industry-standard best practices to validate RESTful services.
 
 ---
 
