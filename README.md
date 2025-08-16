@@ -1,85 +1,93 @@
-# 📩 API Manual Testing with Postman
+# 🌍 CurrencyName SOAP API Testing
 
-A comprehensive repository for **Manual API Testing** using **Postman**,  — featuring real-world REST APIs, request collections, response validations, and status code verifications. Covers data verification and API documentation for efficient and structured manual testing workflows. Efficiently demonstrates structured API test cases, real-world scenarios, and industry-standard best practices to validate RESTful services.
-
----
-
-## 📌 Project Overview
-
-This repository contains a collection of **manual API test cases** designed and executed using **Postman**. It covers end-to-end validation of APIs, including authentication, CRUD operations, error handling, and response validations.
+![Status](https://img.shields.io/badge/Status-Completed-brightgreen?style=for-the-badge)
+![Tool](https://img.shields.io/badge/Tool-SOAPUI-blue?style=for-the-badge\&logo=swagger)
+![Language](https://img.shields.io/badge/Language-XML-orange?style=for-the-badge\&logo=w3c)
+![GitHub](https://img.shields.io/badge/Repo%20Type-Testing%20Portfolio-white?style=for-the-badge\&logo=github)
 
 ---
 
-## 🧰️ Tools & Technologies Used
+## 📌 Overview
 
-* **Postman** (Manual API Testing & Collection Execution)
-* **REST APIs** (Real-world Business Scenarios)
-* **API Documentation** using **Postman Collections**
-* **JSON/XML** Data Structure Validation
-* **HTTP Status Code & Response Body Verification**
+This project demonstrates **end-to-end SOAP API Testing** using **SOAP UI** for the `CurrencyName` operation from the public WSDL:
+
+👉 [CountryInfoService – CurrencyName](http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso?op=CurrencyName)
+
+The API takes a **Currency ISO Code** (e.g., `USD`, `INR`, `EUR`) and returns the **currency name** (e.g., *United States Dollar*, *Indian Rupee*, *Euro*).
+
+---
+
+## ✨ Highlights
+
+* 📑 Designed a **Test Plan** (Objective, Scope, Strategy, Entry/Exit Criteria, Risks, Deliverables)
+* 🧪 Created **detailed Test Cases** (positive, negative, boundary, schema, performance)
+* 📊 Maintained a **Requirement Traceability Matrix (RTM)** ensuring 100% coverage
+* ⚡ Validated **SOAP XML Request/Response** against WSDL schema
+* ⏱️ Performed **functional, negative, and performance testing** in **SOAP UI**
+* 📝 Documented **defect reporting & mitigation strategies**
 
 ---
 
 ## 📂 Repository Structure
 
-| **Folder/File**                                     | **Description**                                                                  |
-| --------------------------------------------------- | -------------------------------------------------------------------------------- |
-| `/Postman Collections/`                             | Contains all Postman collection files (.postman\_collection.json) for API tests. |
-| ├—— `Authentication Tests.postman_collection.json`  | Collection for login/authentication scenarios.                                   |
-| ├—— `CRUD Operations Tests.postman_collection.json` | Collection for Create, Read, Update, Delete APIs.                                |
-| └—— `Error Scenarios.postman_collection.json`       | Collection to test negative/error cases.                                         |
-| `/Test Cases Documentation/`                        | Excel files documenting manual test cases with steps, expected results, etc.     |
-| ├—— `Authentication_Test_Cases.xlsx`                | Test cases related to authentication flows.                                      |
-| ├—— `CRUD_Test_Cases.xlsx`                          | Test cases for basic CRUD operations.                                            |
-| └—— `Negative_Test_Cases.xlsx`                      | Test cases for invalid data, boundary conditions, etc.                           |
-| `/Environment Files/`                               | Postman environment files for managing variables (URLs, Tokens, etc.)            |
-| └—— `DEV_Environment.postman_environment.json`      | Environment file for DEV setup.                                                  |
-| `README.md`                                         | Repository overview, usage instructions, and project documentation.              |
+```plaintext
+📦 CurrencyName-SOAP-API-Testing
+ ┣ 📄 README.md                # Project documentation
+ ┣ 📄 Requirement.docx         # Requirement Document
+ ┣ 📄 TestPlan.docx            # Detailed test plan
+ ┣ 📄 TestCases.xlsx           # Designed test cases with execution status
+ ┣ 📄 RTM.xlsx                 # Requirement Traceability Matrix
+ ┣ 📂 SOAPUI-Projects          # SOAP UI project files (.xml)
+ ┗ 📂 Reports                  # Test execution reports & screenshots
+```
 
 ---
 
-## 🧪 Test Coverage
+## 🧪 Test Scenarios
 
-* ✅ Authentication & Authorization Scenarios
-* ✅ Positive & Negative API Flows
-* ✅ CRUD (Create, Read, Update, Delete) Operations
-* ✅ Response Schema & Status Code Validation
-* ✅ Boundary & Error Condition Testing
-* ✅ Role-Based Access Control (RBAC) Testing *(Optional)*
-
----
-
-## 📄 Documentation
-
-* Detailed test cases are documented in `/Test Cases Documentation/` folder.
-* Each test scenario includes:
-
-  * Test Steps
-  * Expected Result
-  * Actual Result
-  * Status (Pass/Fail)
-  * Observations (if any)
+✔ **Positive** → Valid ISO codes (`USD`, `INR`, `EUR`) return correct names  
+❌ **Negative** → Invalid (`XXX`), Empty (`""`), Special chars (`@#$`) inputs  
+⚡ **Boundary** → Long strings (100 chars), Sequential requests (reliability)  
+📐 **Schema** → Response matches WSDL contract  
+⏱️ **Performance** → Response time ≤ 2 seconds  
 
 ---
 
-## 🎯 Why this Project?
+## 🛠️ Tools & Technologies
 
-* Demonstrates strong **Manual API Testing skills using Postman**.
-* Focuses on **test design, validation techniques, and structured execution**.
-* Ideal for projects without automation scope or for **quick exploratory API testing**.
-* Adds value to **QA portfolios** by showing a **real-time API testing workflow**.
-
----
-
-## 📢 Future Enhancements
-
-* ✅ Automate API Tests using **Postman Newman CLI**
-* ✅ Integrate with **CI/CD pipelines (Jenkins/GitHub Actions)**
-* ✅ API Test Reports with Newman HTML Reporter
+![SOAPUI](https://img.shields.io/badge/SOAPUI-Functional%20Testing-blue?logo=swagger\&style=for-the-badge)
+![WSDL](https://img.shields.io/badge/WSDL-Schema%20Validation-orange?style=for-the-badge)
+![Excel](https://img.shields.io/badge/Excel-Test%20Cases%20%26%20RTM-green?logo=microsoft-excel\&style=for-the-badge)
+![GitHub](https://img.shields.io/badge/GitHub-Version%20Control-black?logo=github\&style=for-the-badge)
 
 ---
 
-## 👤 Author
+## 🚀 Key Learning Outcomes
 
-**\[Sharvari Mehta]**
-SDET | API Test Engineer | Manual & Automation Testing | Postman | REST APIs
+* ✅ Hands-on SOAP API testing with **SOAP UI**
+* ✅ Designed **Test Plan, Test Cases, and RTM** for structured testing
+* ✅ Expertise in **positive, negative, boundary, schema, and performance testing**
+* ✅ Ability to present test artifacts in **professional formats for stakeholders**
+
+---
+
+## 💡 Why This Project?
+
+This project showcases my **SDET skills in API Testing, Documentation, and Test Strategy**.
+It reflects my ability to:
+
+* 📝 Design and execute robust test plans
+* ⚡ Validate APIs against business and technical requirements
+* 📊 Ensure quality through **end-to-end SOAP API testing**
+* 💼 Present my work in a **professional and recruiter-friendly format**
+
+---
+
+🔗 *Part of my **API Testing Portfolio** showcasing SOAP, REST, and Automation expertise.*
+
+---
+
+## 🙋‍♂️ Let's Connect
+
+Feel free to explore, fork, or suggest improvements!  
+📧 [sharvarimehta97@gmail.com] | 💼 [linkedin.com/in/sharvarimehta]
