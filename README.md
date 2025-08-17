@@ -1,7 +1,7 @@
 # 🌍 CurrencyName SOAP API Testing
 
 ![Status](https://img.shields.io/badge/Status-Completed-brightgreen?style=for-the-badge)
-![Tool](https://img.shields.io/badge/Tool-SOAPUI-blue?style=for-the-badge\&logo=swagger)
+![Tool](https://img.shields.io/badge/Tool-SOAP-blue?style=for-the-badge\&logo=swagger)
 ![Language](https://img.shields.io/badge/Language-XML-orange?style=for-the-badge\&logo=w3c)
 ![GitHub](https://img.shields.io/badge/Repo%20Type-Testing%20Portfolio-white?style=for-the-badge\&logo=github)
 
